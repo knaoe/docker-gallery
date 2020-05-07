@@ -1,0 +1,10 @@
+version: "3"
+services:
+  rsyslog:
+    build: .
+    image: kirl0076/rsyslog:latest
+    ports:
+      - "514:514/tcp"
+      - "514:514/udp"
+    volumes:
+      - ./rsyslog.conf:/etc/rsyslog.conf
