@@ -3,6 +3,7 @@ services:
   rsyslog:
     build: .
     image: kirl0076/rsyslog:latest
+    platform: "linux/amd64,linux/arm64"
     ports:
       - "514:514/tcp"
       - "514:514/udp"

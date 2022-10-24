@@ -1,9 +1,9 @@
 FROM alpine:3.11
 
 RUN apk --no-cache update \
-    && apk add --no-cache \
-      rsyslog=8.1911.0-r1 \
-      rsyslog-mmfields=8.1911.0-r1
+  && apk add --no-cache \
+  rsyslog=8.1911.0-r2 \
+  rsyslog-mmfields=8.1911.0-r2
 
 COPY rsyslog.conf /etc/rsyslog.conf
 
